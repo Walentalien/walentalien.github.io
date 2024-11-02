@@ -1,2 +1,4 @@
 # walentalien.github.io
-!Adding Description Needed
+Status: Unfinished
+Link to the page:
+Cloned from: https://github.com/codewithsadee/vcard-personal-portfolio
