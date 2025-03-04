@@ -1,48 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website of Walentyn.">
-    <title>Walentyn - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Oczekiwany Wzrost Coolowości 🚀</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #1e1e2e;
+            color: white;
+            padding: 20px;
+        }
+        canvas {
+            max-width: 800px;
+            margin: 20px auto;
+            display: block;
+            background: white;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Walentyn</h1>
-            <p>Welcome to my personal website!</p>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi! I'm Walentyn, a CS student at AGH UST. I'm passionate about building reliable software that real brings value.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="#">Project 1</a>: A brief description of your project.</li>
-                <!--<li><a href="#">Project 2</a>: Another project description.</li>
-                <li><a href="#">Project 3</a>: Another project description.</li>-->
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:youremail@example.com">walentyn06@gmail.com</a></p>
-            <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
-            <p>GitHub: <a href="#">Your GitHub Profile</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Walentyn. All rights reserved.</p>
-    </footer>
+    <h1>📈 Oczekiwany wzrost wszystkich wskaźników coolowości w skali W</h1>
+    <p>(Obliczenia przeprowadzone za pomocą zaawansowanych technologii DL oraz rachunku prawdopodobieństwa 🧠💡)</p>
+    <canvas id="coolChart"></canvas>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const ctx = document.getElementById('coolChart').getContext('2d');
+            
+            let labels = [];
+            let data = [];
+            
+            for (let i = 0; i < 20; i++) {
+                labels.push(`T${i}`);
+                data.push(Math.exp(i / 3) * 10); // Symulacja szybkiego wzrostu 🚀
+            }
+            
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Coolowość [W]',
+                        data: data,
+                        borderColor: 'rgb(255, 99, 132)',
+                        borderWidth: 3,
+                        fill: false,
+                        tension: 0.2,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: { beginAtZero: true }
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
