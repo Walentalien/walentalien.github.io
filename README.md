@@ -4,4 +4,5 @@ Status: Unfinished
 
 Link to the page: https://walentalien.github.io/
 
-<!--Cloned from: https://github.com/codewithsadee/vcard-personal-portfolio -->
+TODOs: 
+Choose google font font for page

@@ -4,11 +4,75 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Valentyn's Personal Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
     <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Course</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+<div class="text-box">
+    <h1>Some kind of header</h1>
+    <a href="" class="hero-btn">Contact button</a>
+</div>
+</section>
+
+<!-- In this sectiob i want to show what i have done -->
+ <!-- It will be short presentation, it should lead to a page with more detailed description -->
+ <section class="portfolio">
+    <h1>Projects</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde fugiat repellat perspiciatis fuga? Veritatis unde tenetur, numquam porro molestiae quod illo nihil suscipit nesciunt sed eum deserunt assumenda eligendi aliquam!</p>
+    <div class="row">
+        <div class="project-col">
+            <h3>Monte Carlo Simulation</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor temporibus eaque sapiente ut alias culpa vero provident. Commodi, nam eligendi aspernatur expedita au</p>
+
+
+        </div>
+        <div class="project-col">
+            <h3>Some other</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor temporibus eaque sapiente ut alias culpa vero provident. Commodi, nam eligendi aspernatur expedita au</p>
+            
+
+        </div>
+        <div class="project-col">
+            <h3>Jet Another</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor temporibus eaque sapiente ut alias culpa vero provident. Commodi, nam eligendi aspernatur expedita au</p>
+            
+
+        </div>
+    </div>
+
+</section>
+        
         <h1>Valentyn's Personal Website</h1>
         <p>This is a personal website for Valentyn.</p>
         <p>It is a place where I can share my thoughts and ideas.</p>
         <p>It is also a place where I can share my projects.</p>
+<!-- JS for toggle menu -->
+        <script>
+            var navLinks = document.querySelector(".nav-links");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
     </body>
 </html>
