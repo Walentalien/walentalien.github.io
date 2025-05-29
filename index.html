@@ -1,68 +1,14 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oczekiwany Wzrost Coolowości 🚀</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #1e1e2e;
-            color: white;
-            padding: 20px;
-        }
-        canvas {
-            max-width: 800px;
-            margin: 20px auto;
-            display: block;
-            background: white;
-            border-radius: 10px;
-        }
-        h1 {
-            font-size: 24px;
-        }
-    </style>
-</head>
-<body>
-    <h1>📈 Oczekiwany wzrost wszystkich wskaźników coolowości w skali W</h1>
-    <p>(Obliczenia przeprowadzone za pomocą zaawansowanych technologii DL oraz rachunku prawdopodobieństwa 🧠💡)</p>
-    <canvas id="coolChart"></canvas>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const ctx = document.getElementById('coolChart').getContext('2d');
-            
-            let labels = [];
-            let data = [];
-            
-            for (let i = 0; i < 20; i++) {
-                labels.push(`T${i}`);
-                data.push(Math.exp(i / 3) * 10); // Symulacja szybkiego wzrostu 🚀
-            }
-            
-            new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: 'Coolowość [W]',
-                        data: data,
-                        borderColor: 'rgb(255, 99, 132)',
-                        borderWidth: 3,
-                        fill: false,
-                        tension: 0.2,
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    scales: {
-                        y: { beginAtZero: true }
-                    }
-                }
-            });
-        });
-    </script>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Valentyn's Personal Website</title>
+    </head>
+    <body>
+        <h1>Valentyn's Personal Website</h1>
+        <p>This is a personal website for Valentyn.</p>
+        <p>It is a place where I can share my thoughts and ideas.</p>
+        <p>It is also a place where I can share my projects.</p>
+    </body>
 </html>
