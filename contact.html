@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact - Valentyn Oliinyk</title>
+        <meta name="author" content="Walentalien <voliinyk@student.agh.edu.pl>">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+                <!-- WATERMARK -->
+                <div class="watermark">UNDER CONSTRUCTION</div>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html#portfolio">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contact Me</h1>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-content">
+            <div class="row">
+                <div class="contact-col">
+                    <div class="contact-info">
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p>voliinyk@student.agh.edu.pl</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>Available upon request</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h5>Location</h5>
+                                <p>Kraków, Poland</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Enter your name" required>
+                        <input type="email" placeholder="Enter email address" required>
+                        <input type="text" placeholder="Enter your subject" required>
+                        <textarea rows="8" placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="footer">
+            <h4>Connect With Me</h4>
+            <p>Feel free to reach out for collaborations, questions, or just to connect!</p>
+            <div class="icons">
+                <a href="mailto:voliinyk@student.agh.edu.pl"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/walentalien" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/walentyn1" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p style="margin-top: 20px; font-size: 12px; color: #999;">© 2025 Valentyn Voliinyk. All rights reserved.</p>
+        </section>
+
+        <script>
+            var navLinks = document.querySelector(".nav-links");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>
