@@ -270,6 +270,8 @@ h3{
 
 .software-col{
  flex-basis: 44%;
+ margin-bottom: 20px; /* Add spacing between tiles */
+
  border-radius: 10px;
  margin: bottom 5% ;
  text-align: left;
@@ -278,6 +280,11 @@ h3{
  cursor: pointer;  
  display: flex; 
 }
+
+.software-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, .2);
+}
+
 .software-col img{
     height: 40px;
     margin-left :5px;
@@ -546,3 +553,28 @@ h3{
     font-family: Arial, sans-serif;
     user-select: none;
   }
+
+  .software-tile {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit text color */
+
+}
+
+.software-tile img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    margin-right: 15px; /* Space between logo and text */
+}
+
+.software-info h3 {
+    margin: 0;
+    font-size: 1.2em; /* Adjust font size as needed */
+}
+
+.software-info p {
+    margin: 5px 0 0;
+    font-size: 0.9em; /* Adjust font size as needed */
+    color: #666; /* Optional: lighter text color for description */
+}
