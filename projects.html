@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects - Valentyn Oliinyk</title>
+        <meta name="author" content="Walentalien <voliinyk@student.agh.edu.pl>">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <!-- WATERMARK -->
+        <div class="watermark">UNDER CONSTRUCTION</div>
+        
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>My Projects</h1>
+        </section>
+
+        <!-- Projects Content -->
+        <section class="projects-showcase">
+            <div class="projects-intro">
+                <h2>Software Development Portfolio</h2>
+                <p>A collection of my personal projects showcasing various technologies, programming languages, and problem-solving approaches. Each project represents a unique challenge and learning experience in my journey as a software developer.</p>
+            </div>
+
+            <!-- Featured Project -->
+            <div class="featured-project">
+                <div class="row">
+                    <div class="project-details">
+                        <h3>Monte Carlo π Estimation Simulation</h3>
+                        <p class="project-description">
+                            A 2D visualization of the Monte Carlo method for estimating π using the Bevy game engine. 
+                            This project demonstrates mathematical concepts through simulation, showing how random 
+                            sampling can solve complex mathematical problems.
+                        </p>
+                        <div class="tech-stack">
+                            <h4>Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag rust">Rust</span>
+                                <span class="tech-tag bevy">Bevy Engine v0.13</span>
+                                <span class="tech-tag math">Monte Carlo Methods</span>
+                                <span class="tech-tag graphics">2D Graphics</span>
+                            </div>
+                        </div>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Real-time visualization of random point generation</li>
+                                <li>Dynamic π estimation calculation</li>
+                                <li>Interactive controls for simulation parameters</li>
+                                <li>Performance-optimized rendering with Bevy ECS</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Walentalien/PIEstimator" target="_blank" class="project-btn">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                            <!-- <a href="#" class="project-btn demo-btn">
+                                <i class="fa-solid fa-play"></i> Live Demo
+                            </a> -->
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/monte_carlo_simulation_2D.png" alt="Monte Carlo Simulation Screenshot">
+                        <div class="image-caption">Real-time π estimation visualization</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Projects Grid -->
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-card-image">
+                        <img src="images/placeholder_for_about_section.png" alt="WikiRacer Project">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-external-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <h3>WikiRacer</h3>
+                        <p>An intelligent Wikipedia navigation game that finds the shortest path between articles using graph algorithms and web scraping techniques.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag web">Web Scraping</span>
+                            <span class="tech-tag algorithms">Graph Algorithms</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge in-progress">In Development</span>
+                        </div>
+                        <a href="https://github.com/Walentalien/WikiRacer" target="_blank" class="project-link">
+                            View Project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-image">
+                        <img src="images/placeholder_for_about_section.png" alt="Chatana Solana DApp">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-external-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Chatana - Solana DApp</h3>
+                        <p>A decentralized chat application built on the Solana blockchain, exploring Web3 technologies and smart contract development.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag solana">Solana</span>
+                            <span class="tech-tag rust">Rust</span>
+                            <span class="tech-tag web3">Web3</span>
+                            <span class="tech-tag blockchain">Blockchain</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge experimental">Experimental</span>
+                        </div>
+                        <a href="https://github.com/Walentalien/Chatana" target="_blank" class="project-link">
+                            View Project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future projects -->
+                <div class="project-card upcoming">
+                    <div class="project-card-image">
+                        <div class="upcoming-placeholder">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Coming Soon</h3>
+                        <p>More exciting projects are in development. Stay tuned for updates on my latest work in software development and engineering.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag upcoming-tag">TBD</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge planning">Planning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills & Technologies Section -->
+            <div class="skills-section">
+                <h2>Technologies & Tools</h2>
+                <p>Here are the main technologies and tools I work with across my projects:</p>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Programming Languages</h4>
+                        <div class="skill-items">
+                            <span class="skill-item">Rust</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">JavaScript</span>
+                            <span class="skill-item">TypeScript</span>
+                            <span class="skill-item">HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frameworks & Libraries</h4>
+                        <div class="skill-items">
+                            <span class="skill-item">Bevy Engine</span>
+                            <span class="skill-item">React</span>
+                            <span class="skill-item">Node.js</span>
+                            <span class="skill-item">Solana Web3.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Tools & Platforms</h4>
+                        <div class="skill-items">
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">GitHub</span>
+                            <span class="skill-item">VS Code</span>
+                            <span class="skill-item">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="footer">
+            <h4>Connect With Me</h4>
+            <p>Feel free to reach out for collaborations, questions, or just to connect!</p>
+            <div class="icons">
+                <a href="mailto:voliinyk@student.agh.edu.pl"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/walentalien" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/walentyn1" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <!-- <a href="https://x.com/Walentyn162705" target="_blank"><i class="fa-brands fa-twitter"></i></a> -->
+            </div>
+            <p style="margin-top: 20px; font-size: 12px; color: #999;">© 2025 Valentyn Voliinyk. All rights reserved.</p>
+        </section>
+
+        <script>
+            var navLinks = document.querySelector(".nav-links");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>
