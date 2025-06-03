@@ -332,6 +332,7 @@ h3{
 
 
 /* About me page */
+
 .sub-header{
     height: 50vh;
     width:100%;
@@ -343,7 +344,9 @@ h3{
 }
 
 .sub-header h1{
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
 
 }
 
@@ -377,7 +380,9 @@ h3{
 }
 .red-btn:hover{
     color:#fff
-}
+} 
+
+
 
 /* Blog Page */
 .blog-content {
