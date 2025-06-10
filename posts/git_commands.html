@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful Git Commands</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="../index.html"><img src="../images/logo.png" alt="Home"></a>
+            <div class="nav-links">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../projects.html">Projects</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+        <h1>Useful Git Commands</h1>
+    </section>
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="../images/placeholder_for_about_section.png" alt="Git">
+                <h2>Essential Git Commands</h2>
+                <p>Git is a powerful version control system that lets you track changes and collaborate with others. Below are some of the commands I use frequently althoutho they weren't taught</p>
+                <ul class="git-list">
+                    <li><code>git status</code> &ndash; check the state of your working tree</li>
+                    <li><code>git add &lt;file&gt;</code> &ndash; stage changes for commit</li>
+                    <li><code>git commit -m "message"</code> &ndash; save staged changes</li>
+                    <li><code>git push</code> &ndash; upload local commits to the remote repository</li>
+                    <li><code>git pull</code> &ndash; fetch and merge updates from the remote repository</li>
+                    <li><code>git checkout -b &lt;branch&gt;</code> &ndash; create and switch to a new branch</li>
+                    <li><code>git merge &lt;branch&gt;</code> &ndash; merge another branch into the current one</li>
+                    <li><code>git log</code> &ndash; view commit history</li>
+                    <li><code>git diff --stat</code> &ndash; see changes between commits or the working tree</li>
+                </ul>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Software Engineering</span>
+                    <span>1</span>
+                </div>
+                <div>
+                    <span>Web Development</span>
+                    <span>1</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h1>Reaching Out</h1>
+        <a href="../contact.html" class="hero-btn">Contact me</a>
+    </section>
+
+    <section class="footer">
+        <h4>Connect With Me</h4>
+        <p>Feel free to reach out for collaborations, questions, or just to connect!</p>
+        <div class="icons">
+            <a href="mailto:voliinyk@student.agh.edu.pl"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/walentalien" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/walentyn1" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p style="margin-top: 20px; font-size: 12px; color: #999;">© 2025 Valentyn Voliinyk. All rights reserved.</p>
+    </section>
+
+    <script>
+        var navLinks = document.querySelector(".nav-links");
+        var menuIcon = document.querySelector(".fa-bars");
+        var closeIcon = document.querySelector(".fa-circle-xmark");
+        menuIcon.addEventListener("click", function() {
+            navLinks.style.right = "0";
+        });
+        closeIcon.addEventListener("click", function() {
+            navLinks.style.right = "-200px";
+        });
+    </script>
+</body>
+</html>
